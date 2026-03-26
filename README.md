@@ -1,38 +1,61 @@
-# ImageFlow Documentation
+# ImageFlow Documentation Website
 
-Public documentation for ImageFlow — Native image converter for macOS, iPhone & iPad.
+Este directorio contiene el sitio web publico de ImageFlow, publicado en GitHub Pages desde el repositorio `ImageFlow-Docs`.
 
-## 🌐 Live Site
+## URL Publica
 
-**Privacy Policy**: https://rodriqe.github.io/ImageFlow-Docs/docs/privacy.html
-**Landing Page**: https://rodriqe.github.io/ImageFlow-Docs/docs/index.html
+Sitio en vivo: https://rodriqe.github.io/ImageFlow-Docs/docs/
 
-## 📄 Contents
+## Archivos
 
-- `/docs/privacy.html` — Privacy Policy (required for App Store)
-- `/docs/index.html` — Landing page
+| Archivo | Descripcion | URL |
+|---|---|---|
+| `docs/index.html` | Landing page principal | https://rodriqe.github.io/ImageFlow-Docs/docs/index.html |
+| `docs/privacy.html` | Privacy Policy (App Store) | https://rodriqe.github.io/ImageFlow-Docs/docs/privacy.html |
+| `docs/support.html` | Soporte publico para App Store Connect | https://rodriqe.github.io/ImageFlow-Docs/docs/support.html |
 
-## 🔗 Links
+## Proposito
 
-- **Main App Repository**: [github.com/Rodriqe/ImageFlow](https://github.com/Rodriqe/ImageFlow) (Private)
-- **Support**: [Create an issue](https://github.com/Rodriqe/ImageFlow-Docs/issues)
+- `privacy.html`: URL oficial de Privacy Policy para App Store Connect
+- `support.html`: URL oficial de soporte para App Store Connect
+- `index.html`: Landing page publica del proyecto
 
----
+## Publicacion
 
-## About ImageFlow
+Este sitio se publica automaticamente via GitHub Pages cuando se hace push al repositorio `ImageFlow-Docs` en la rama `main`.
 
-ImageFlow is a native image converter for macOS, iPhone, and iPad.
-All processing happens on-device — no cloud, no tracking, no accounts.
+### Configuracion recomendada
 
-- 🖼️ PNG, JPEG, TIFF, HEIC conversion
-- 📄 DNG / RAW support
-- 📐 Optional resize with aspect ratio lock
-- 📱 iPhone, iPad & macOS
-- 🔒 No data collection, no tracking
-- ⚡ Fast, native, SwiftUI
+1. Repositorio -> Settings -> Pages
+2. Source: Deploy from a branch
+3. Branch: `main` -> `/docs`
 
----
+### Actualizar contenido
 
-*This is the public documentation repository. The main app code is kept private.*
+```bash
+# Editar archivos en docs/
+# Luego subirlos al repo publico ImageFlow-Docs:
+git add docs/
+git commit -m "Update documentation website"
+git push origin main
+```
 
-**© 2026 ImageFlow. All rights reserved.**
+## Checklist GitHub Pages
+
+- [x] Directorio `/docs` creado
+- [x] `index.html` creado
+- [x] `privacy.html` creado
+- [x] `support.html` creado
+- [ ] GitHub Pages habilitado (Settings -> Pages)
+- [ ] Sitio verificado: https://rodriqe.github.io/ImageFlow-Docs/docs/
+- [ ] Privacy Policy URL anadida a App Store Connect
+- [ ] Support URL anadida a App Store Connect
+
+## Enlaces importantes
+
+- Privacy Policy: https://rodriqe.github.io/ImageFlow-Docs/docs/privacy.html
+- Support: https://rodriqe.github.io/ImageFlow-Docs/docs/support.html
+- GitHub Repo: https://github.com/Rodriqe/ImageFlow-Docs
+- App principal: https://github.com/Rodriqe/ImageFlow
+
+Nota: Este sitio es estatico (HTML/CSS). No requiere servidor ni base de datos.
